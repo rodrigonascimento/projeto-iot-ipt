@@ -14,7 +14,6 @@ def config_wifi():
     if not wlan.isconnected():
         print('connecting to network...')
         wlan.connect('meuwifi', '12345678') # connect to an AP
-        # wlan.connect('Logwriter', '1324memc') # connect to an AP
         time.sleep_ms(500)
         while not wlan.isconnected():
             pass
